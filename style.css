@@ -9,9 +9,6 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: sticky;
-    top: 0;
-    opacity: .9;
     z-index: 1111;
 }
 .flex1{
@@ -34,4 +31,7 @@ header{
         width: 75%;
         margin: 25px auto;
     }
+}
+.background{
+    background-color: #FEFEFE;
 }
