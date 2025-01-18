@@ -2,202 +2,552 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0 , user-scalable=no">
     <title>Strong Gym & Fitness</title>
     <!--link-->
     <link rel="stylesheet" href="style.css">
     <!--Bootstrap CSS link-->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!--bootstrap icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!--Bootstrap Javascript link-->
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <header class="bg-secondary">
-                <!--border and border color and border width and border radius-->
-        <div class="border border-secondary rounded-circle" style="width: 70px; height: 70px;">
-            <img src="images/logo.jpeg" alt="" class="img-fluid border border-dark border-5 rounded-circle">
+    <!--AOS js-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--AOS init-->
+    <script>
+        AOS.init();
+    </script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary fs-5 px-5 text-uppercase sticky-top bg-transparent">
+
+        <div class="navbar-brand mb-2" style="width: 70px; height: 70px;">
+            <a href="">
+                <img src="images/logo.jpeg" alt="" class="img-fluid rounded-circle border-3 border border-dark">
+            </a>
         </div>
-        <!--text-->
-        <div class="flex-item">
-            <div>
-                <a href="#home" class="text-light fs-5" style="text-decoration: none;">Home</a>
-            </div>
-            <div>
-                <a href="#services" class="text-light fs-5" style="text-decoration: none;">Services</a>
-            </div>
-            <div>
-                <a href="#About-Us" class="text-light fs-5" style="text-decoration: none;">About Us</a>
-            </div>
-            <div>
-                <a href="#contactus" class="text-light fs-5" style="text-decoration: none;">Contact Us</a>
-            </div>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav mx-auto ">
+                <li class="nav-item mx-1">
+                    <a href="#Home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a href="#service" class="nav-link">Service</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a href="#plan" class="nav-link">Plan</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a href="#testimonial" class="nav-link">Testimonial</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a href="#news" class="nav-link">News</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a href="#faq" class="nav-link">FAQ</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#login" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#mylogin" class="nav-link" data-bs-toggle="offcanvas">Sign-Up</a>
+                </li>
+            </ul>
         </div>
-    </header>
-    <section class="bg-dark" id="home">
-        <div style="height: 500px;">
-            <!--text align and font size and textcase-->
-            <h1 class="text-light text-center text-lowercase fs-2" style="line-height: 500px;">Number 1</h1>
-        </div>
-    </section>
-    <section class="bg-light" id="services">
-        <div class="flex1">
-            <div class="text-light bg-dark rounded-4 text-center text-uppercase shadow-lg" style="width: 200px; height: auto; margin: 25px; padding: 25px;">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, ducimus, aut, harum labore a blanditiis non accusamus alias temporibus praesentium consequatur corporis esse laboriosam nemo ipsam architecto. Officia, aliquid ducimus.</p>
-            </div>
+    </nav>
     
-            <div class="text-light bg-dark rounded-4 text-center text-uppercase shadow-lg" style="width: 200px; height: auto; margin: 25px; padding: 25px;">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem dolorum sit impedit velit quaerat, praesentium dicta iste ratione? Enim facilis accusantium corporis saepe ex libero dolores, temporibus sit laboriosam voluptas!</p>
+    <section id="Home">
+        <!--<div class="overlay"></div>-->
+        <div class="header-container mx-5 text-white text-uppercase" id="container-home">
+            <p style="font-size: 70px;" class="fw-semibold" data-aos="fade-right" data-aos-duration="1000">Be Strong</p>
+            <p class="fw-semibold" style="font-size: 40px;" data-aos="fade-right" data-aos-duration="1000">& Fit</p>
+            <p class="fs-4" data-aos="fade-right" data-aos-duration="1000">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, reiciendis?</p>
+            <button class="btn btn-danger text-uppercases fs-3 fw-semibold" data-aos="fade-right" data-aos-duration="1000">Join Now</button>
+        </div>
+    </section>
+
+    <section id="about" class="container p-5">
+        <div class="sub-heading text-uppercase" data-aos="zoom-in" data-aos-duration="1000">About Us</div>
+        <div class="main-heading fw-semibold text-uppercase" data-aos="zoom-in" data-aos-duration="1000">Who We Are</div>
+        <div class="heading-line" data-aos="zoom-in" data-aos-duration="1000"></div>
+        <div class="row align-items-center gy-4">
+            <div class="col-md-6 text-white" data-aos="fade-right" data-aos-duration="1000">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iste odio cupiditate? Impedit blanditiis nam cupiditate tenetur fuga, officiis porro vel esse, doloribus incidunt, voluptatem sunt est placeat? Vel, totam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iste odio cupiditate? Impedit blanditiis nam cupiditate tenetur fuga, officiis porro vel esse, doloribus incidunt, voluptatem sunt est placeat? Vel, totam!</p>
             </div>
-            <div class="text-light bg-dark rounded-4 text-center text-uppercase shadow-lg" style="width: 200px; height: auto; margin: 25px; padding: 25px;">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem dolorum sit impedit velit quaerat, praesentium dicta iste ratione? Enim facilis accusantium corporis saepe ex libero dolores, temporibus sit laboriosam voluptas!</p>
+            <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+                <img src="images/gym about.jpg" alt="" class="img-fluid rounded-1">
             </div>
-            <div class="text-light bg-dark rounded-4 text-center text-uppercase shadow-lg" style="width: 200px; height: auto; margin: 25px; padding: 25px;">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem dolorum sit impedit velit quaerat, praesentium dicta iste ratione? Enim facilis accusantium corporis saepe ex libero dolores, temporibus sit laboriosam voluptas!</p>
+        </div>
+    </section>
+
+    <section id="service" class="container p-5">
+        <div class="sub-heading text-uppercase" data-aos="zoom-in" data-aos-duration="1000">Our Services</div>
+        <div class="main-heading fw-semibold text-uppercase" data-aos="zoom-in" data-aos-duration="1000">What We Offer?</div>
+        <div class="heading-line" data-aos="zoom-in" data-aos-duration="1000"></div>
+        <div class="row gy-4">
+            <div class="col-md-5" data-aos="fade-right" data-aos-duration="1000">
+                <img src="images/service 1.jpg" alt="" class="img-fluid rounded-1 overflow-hidden">
             </div>
-            <div class="text-light bg-dark rounded-4 text-center text-uppercase shadow-lg" style="width: 200px; height: auto; margin: 25px; padding: 25px;">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem dolorum sit impedit velit quaerat, praesentium dicta iste ratione? Enim facilis accusantium corporis saepe ex libero dolores, temporibus sit laboriosam voluptas!</p>
+            <div class="col-md-7">
+                <div class="card service-card overflow-hidden bg-dark mb-3" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="row p-2">
+                        <div class="col-md-7 text-white">
+                            <h5 class="fw-medium text-center">Retail Merchandise</h5>
+                            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad porro nemo reiciendis accusantium nostrum quis veniam repellat, corrupti doloremque odit blanditiis deleniti obcaecati, inventore quo ex at facilis. Molestiae, voluptatibus.</p>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="images/service 2.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card service-card overflow-hidden bg-dark mb-3" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="row p-2">
+                        <div class="col-md-7 text-white">
+                            <h5 class="fw-medium text-center">Online Personal Training</h5>
+                            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad porro nemo reiciendis accusantium nostrum quis veniam repellat, corrupti doloremque odit blanditiis deleniti obcaecati, inventore quo ex at facilis. Molestiae, voluptatibus.</p>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="images/gym service.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card service-card overflow-hidden bg-dark mb-3" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="row p-2">
+                        <div class="col-md-7 text-white">
+                            <h5 class="fw-medium text-center">Personal Training</h5>
+                            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad porro nemo reiciendis accusantium nostrum quis veniam repellat, corrupti doloremque odit blanditiis deleniti obcaecati, inventore quo ex at facilis. Molestiae, voluptatibus.</p>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="images/service 3.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+                
             </div>
-            <div class="text-light bg-dark rounded-4 text-center text-uppercase shadow-lg" style="width: 200px; height: auto; margin: 25px; padding: 25px;">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, ducimus, aut, harum labore a blanditiis non accusamus alias temporibus praesentium consequatur corporis esse laboriosam nemo ipsam architecto. Officia, aliquid ducimus.</p>
+        </div>
+    </section>
+
+    <section id="plan" class="container p-5">
+        <div class="sub-heading text-uppercase" data-aos="zoom-in" data-aos-duration="1000">Pricing Table</div>
+        <div class="main-heading fw-semibold text-uppercase" data-aos="zoom-in" data-aos-duration="1000">Membership-Plan</div>
+        <div class="heading-line"></div>
+
+        <div class="row align-items-center gy-4">
+            <div class="col-lg-4 col-md-6" data-aos="fade-down-right" data-aos-duration="1000">
+                <div class="card text-center bg-dark text-light border-0">
+                    <div class="card-header">
+                        <h4>$<span class="fs-1">10</span>/Day</h4>
+                    </div>
+                    <div class="bg-warning p-3 fs-4">One Day Training</div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-light bg-transparent border-bottom mb-2">An item</li>
+                            <li class="list-group-item text-light bg-transparent mb-2">Second item</li>
+                            <li class="list-group-item text-light bg-transparent mb-2">Third item</li>
+                            <li class="list-group-item text-light bg-transparent mb-2">Fourth item</li>
+                            <li class="list-group-item text-light bg-transparent mb-2">Fifth item</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="card text-center bg-dark text-light border-3 border border-danger plan-2-card overflow-hidden">
+                    <div class="card-header">
+                        <h4>$<span class="fs-1">79</span>/Month</h4>
+                    </div>
+                    <div class="bg-danger p-3 fs-4">12 Months Membership</div>
+                    <div class="recommended">Recommended</div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-light bg-transparent border-bottom mb-3">An item</li>
+                            <li class="list-group-item text-light bg-transparent mb-3">Second item</li>
+                            <li class="list-group-item text-light bg-transparent mb-3">Third item</li>
+                            <li class="list-group-item text-light bg-transparent mb-3">Fourth item</li>
+                            <li class="list-group-item text-light bg-transparent mb-3">Fifth item</li>
+                            <li class="list-group-item text-light bg-transparent mb-3">
+                                <button class="btn btn-danger">Sign Up Now</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-down-left" data-aos-duration="1000">
+                <div class="card text-center bg-dark text-light border-0">
+                    <div class="card-header">
+                        <h4>$<span class="fs-1">99</span>/Month</h4>
+                    </div>
+                    <div class="bg-warning p-3 fs-4">Monthly Payment</div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-light bg-transparent border-bottom mb-2">An item</li>
+                            <li class="list-group-item text-light bg-transparent mb-2">Second item</li>
+                            <li class="list-group-item text-light bg-transparent mb-2">Third item</li>
+                            <li class="list-group-item text-light bg-transparent mb-2">Fourth item</li>
+                            <li class="list-group-item text-light bg-transparent mb-2">Fifth item</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
-            <div class="text-light bg-dark rounded-4 text-center text-uppercase shadow-lg" style="width: 200px; height: auto; margin: 25px; padding: 25px;">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem dolorum sit impedit velit quaerat, praesentium dicta iste ratione? Enim facilis accusantium corporis saepe ex libero dolores, temporibus sit laboriosam voluptas!</p>
+    <section id="testimonial" class="container p-5"> 
+        <div class="sub-heading text-uppercase" data-aos="zoom-in" data-aos-duration="1000">Testimonial</div>
+        <div class="main-heading fw-semibold text-uppercase" data-aos="zoom-in" data-aos-duration="1000">What Our Clients Say?</div>
+        <div class="heading-line" data-aos="zoom-in" data-aos-duration="1000"></div>
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="text-light bg-dark rounded-4 text-center text-uppercase shadow-lg" style="width: 200px; height: auto; margin: 25px; padding: 25px;">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem dolorum sit impedit velit quaerat, praesentium dicta iste ratione? Enim facilis accusantium corporis saepe ex libero dolores, temporibus sit laboriosam voluptas!</p>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+
+                <div class="row gy-2">
+                    <div class="col-lg-6" data-aos="zoom-in-right" data-aos-duration="1000">
+                        <div class="card bg-dark overflow-hidden border-0">
+                            <div class="row">
+                                <div class="col-sm-7 py-3 px-4">
+                                    <h4 class="text-white">James</h4>
+                                    <h6 class="text-warning">Client</h6>
+                                    <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, commodi ipsam maiores corrupti fugit tempora eius non illum ut voluptatibus excepturi labore sunt vitae obcaecati iste voluptate repudiandae iusto possimus.</p>
+                                    <div class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <img src="images/customer 1 (1).jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-6" data-aos="zoom-in-left" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="card bg-dark overflow-hidden border-0">
+                            <div class="row bg-dark">
+                                <div class="col-sm-7 py-3 px-4">
+                                    <h4 class="text-white">Nick</h4>
+                                    <h6 class="text-warning">Client</h6>
+                                    <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, commodi ipsam maiores corrupti fugit tempora eius non illum ut voluptatibus excepturi labore sunt vitae obcaecati iste voluptate repudiandae iusto possimus.</p>
+                                    <div class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <img src="images/customer 3.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+              <div class="carousel-item">
+                <div class="row gy-2">
+                    <div class="col-lg-6" data-aos="zoom-in-right">
+                        <div class="card bg-dark overflow-hidden border-0">
+                            <div class="row">
+                                <div class="col-sm-7 py-3 px-4">
+                                    <h4 class="text-white">Susan</h4>
+                                    <h6 class="text-warning">Client</h6>
+                                    <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, commodi ipsam maiores corrupti fugit tempora eius non illum ut voluptatibus excepturi labore sunt vitae obcaecati iste voluptate repudiandae iusto possimus.</p>
+                                    <div class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <img src="images/customer 5 (5).jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-6" data-aos="zoom-in-left">
+                        <div class="card bg-dark overflow-hidden border-0">
+                            <div class="row bg-dark">
+                                <div class="col-sm-7 py-3 px-4">
+                                    <h4 class="text-white">Hanna</h4>
+                                    <h3 class="text-warning">Client</h3>
+                                    <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, commodi ipsam maiores corrupti fugit tempora eius non illum ut voluptatibus excepturi labore sunt vitae obcaecati iste voluptate repudiandae iusto possimus.</p>
+                                    <div class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <img src="images/customer-10.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row gy-2">
+                    <div class="col-lg-6" data-aos="zoom-in-right">
+                        <div class="card bg-dark overflow-hidden border-0">
+                            <div class="row">
+                                <div class="col-sm-7 py-3 px-4">
+                                    <h4 class="text-white">Lily Wong</h4>
+                                    <h6 class="text-warning">Client</h6>
+                                    <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, commodi ipsam maiores corrupti fugit tempora eius non illum ut voluptatibus excepturi labore sunt vitae obcaecati iste voluptate repudiandae iusto possimus.</p>
+                                    <div class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <img src="images/customer-11.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-6" data-aos="zoom-in-left">
+                        <div class="card bg-dark overflow-hidden border-0">
+                            <div class="row bg-dark">
+                                <div class="col-sm-7 py-3 px-4">
+                                    <h4 class="text-white">Javiar</h4>
+                                    <h3 class="text-warning">Client</h3>
+                                    <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, commodi ipsam maiores corrupti fugit tempora eius non illum ut voluptatibus excepturi labore sunt vitae obcaecati iste voluptate repudiandae iusto possimus.</p>
+                                    <div class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <img src="images/customer-12.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
             </div>
-            <div class="text-light bg-dark rounded-4 text-center text-uppercase shadow-lg" style="width: 200px; height: auto; margin: 25px; padding: 25px;">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem dolorum sit impedit velit quaerat, praesentium dicta iste ratione? Enim facilis accusantium corporis saepe ex libero dolores, temporibus sit laboriosam voluptas!</p>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    <section id="news" class="container p-5">
+        <div class="sub-heading text-uppercase" data-aos="zoom-in" data-aos-duration="1000">Recent blogs</div>
+        <div class="main-heading fw-semibold text-uppercase" data-aos="zoom-in" data-aos-duration="1000">our latest news</div>
+        <div class="heading-line" data-aos="zoom-in" data-aos-duration="1000"></div>
+
+        <div class="row gy-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-right" data-aos-duration="1000">
+                <div class="card bg-dark text-white border-0">
+                    <div class="card-header">
+                        <img src="images/blog1.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="card-body">
+                        <h6 class="text-warning">Blog One</h6>
+                        <h4 class="mb-2">How To Fit Your Body</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit facere at minus ex optio repellendus reprehenderit, maxime sint ut incidunt doloremque porro, id dolores architecto non praesentium autem provident laborum?</p>
+                        <div>
+                            <span><i class="bi bi-stopwatch"></i> 13m | David</span>
+                            <span class="float-end"><i class="bi bi-chat-dots-fill"></i> 52</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="text-light bg-dark rounded-4 text-center text-uppercase shadow-lg" style="width: 200px; height: auto; margin: 25px; padding: 25px;">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem dolorum sit impedit velit quaerat, praesentium dicta iste ratione? Enim facilis accusantium corporis saepe ex libero dolores, temporibus sit laboriosam voluptas!</p>
+
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="card bg-dark text-white border-0">
+                    <div class="card-header">
+                        <img src="images/blog2.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="card-body">
+                        <h6 class="text-warning">Blog Two</h6>
+                        <h4 class="mb-2">Ladies and ABS</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit facere at minus ex optio repellendus reprehenderit, maxime sint ut incidunt doloremque porro, id dolores architecto non praesentium autem provident laborum?</p>
+                        <div>
+                            <span><i class="bi bi-stopwatch"></i> 1h | Sara</span>
+                            <span class="float-end"><i class="bi bi-chat-dots-fill"></i> 67</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-left" data-aos-duration="1000">
+                <div class="card bg-dark text-white border-0">
+                    <div class="card-header">
+                        <img src="images/blog3.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="card-body">
+                        <h6 class="text-warning">Blog Three</h6>
+                        <h4 class="mb-2">Fat Killers</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit facere at minus ex optio repellendus reprehenderit, maxime sint ut incidunt doloremque porro, id dolores architecto non praesentium autem provident laborum?</p>
+                        <div>
+                            <span><i class="bi bi-stopwatch"></i> 1d | John</span>
+                            <span class="float-end"><i class="bi bi-chat-dots-fill"></i> 102</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section id="About-Us">
-        
-        <div class="d-flex justify-content-between background">
-            <div class="" style="width: 50%;">
-                <img src="images/personal trainer.jpg" alt="" class="img-fluid">
+
+    <section id="faq" class="container p-5">
+        <div class="sub-heading text-uppercase" data-aos="zoom-in" data-aos-duration="1000">Frequently ask question</div>
+        <div class="main-heading fw-semibold text-uppercase" data-aos="zoom-in" data-aos-duration="1000">FAQ</div>
+        <div class="heading-line"></div>
+
+        <div class="accordion" id="accordionExample" data-aos="zoom-in-right" data-aos-duration="1000">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Lorem ipsum dolor sit amet.?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum molestiae necessitatibus sequi. Unde iure eum nemo dolores itaque error maiores quis nulla ad delectus dicta veniam, repudiandae sint adipisci quas?</p>
+                </div>
+              </div>
             </div>
-            <div class="fs-2 p-5 shadow-lg rounded-bottom-4" style="width: 50%; background-color: #FEFEFE;">
-                <p class="fw-bold">Looking for the Personal Trainer?</p>
-                <p class="fs-6 fw-medium text-start lh-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas eius autem magnam fugiat distinctio voluptate explicabo earum, </p>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Lorem ipsum dolor sit amet.?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat repellat ab quae eaque numquam aut earum eius tenetur quas. Quae aut eaque autem quaerat voluptatum placeat ab soluta id pariatur.</p>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="fs-3 fw-bold text-center mt-5">Duration & Classes</div>
-        <div class="table-responsive m-3">
-            <table class="table table-hover table align-middle table-bordered">
-                <tr>
-                    <th>No</th>
-                    <th>Duration</th>
-                    <th>Class-Type</th>
-                    <th>Trainer Name</th>
-                    <th>Phone Number</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>One Month</td>
-                    <td>Strength-Training</td>
-                    <td>Naing Oo</td>
-                    <td>0978653421</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>One Month</td>
-                    <td>Cardio</td>
-                    <td>Aung Aung</td>
-                    <td>0912345621</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>One Month</td>
-                    <td>Strength-Training</td>
-                    <td>Hlaing Phyo</td>
-                    <td>0985432156</td>
-                </tr>
-            </table>
-        </div>
-        <ul class="pagination justify-content-center">
-            <li class="page-item active">
-                <a href="" class="page-link text-light">1</a>
-            </li>
-            <li class="page-item">
-                <a href="" class="page-link text-dark">2</a>
-            </li>
-            <li class="page-item">
-                <a href="" class="page-link text-dark">3</a>
-            </li>
-            <li class="page-item">
-                <a href="" class="page-link text-dark">4</a>
-            </li>
-            <li class="page-item">
-                <a href="" class="page-link text-dark">5</a>
-            </li>
-            <li class="page-item">
-                <a href="" class="page-link text-dark">...</a>
-            </li>
-        </ul>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Lorem ipsum dolor sit amet.?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatem at quis iusto odio labore, velit nulla reiciendis, est eaque perspiciatis dolores consequatur culpa dolorum asperiores deserunt sapiente? Labore, autem?</p>
+                </div>
+              </div>
+            </div>
+          </div>
     </section>
-    <footer id="contactus" class="bg-dark" style="padding: 50px;">
+
+    <section id="contact">
+        <div class="contact-background">
+            <div class="sub-heading text-uppercase" data-aos="fade-right" data-aos-duration="1000">contact us</div>
+            <div class="main-heading fw-semibold text-uppercase my-5" data-aos="fade-left" data-aos-duration="2000">+959 09958462067</div>
+            <div class="sub-heading fw-semibold text-white" data-aos="fade-right" data-aos-duration="1000">www.swampyae330@gmail.com</div>
+            <div class="heading-line"></div>
+            <a href="" class="btn btn-danger text-uppercase fs-3 fw-medium" data-aos="fade-left" data-aos-duration="2000">call us now</a>
+        </div>
+    </section>
+
+    <footer class="bg-dark" style="padding: 50px;">
         <div class="d-flex justify-content-between">
-            <div class="border border-secondary rounded-circle" style="width: 70px; height: 70px;">
-                <img src="images/logo.jpeg" alt="" class="img-fluid border border-dark border-5 rounded-circle">
+            <div class="navbar-brand mb-2" style="width: 80px; height: 80px;" data-aos="zoom-in-right" data-aos-duration="1000">
+                <a href="">
+                    <img src="images/logo.jpeg" alt="" class="img-fluid rounded-circle border-3 border border-dark">
+                </a>
             </div>
-            <div class="text-light fs-3 fw-bold mb-3">Join Us Strongly</div>
+            <div class="text-light fs-3 fw-bold mb-3 text-uppercase" data-aos="zoom-in-left" data-aos-duration="2000">Strong Gym and fitness</div>
         </div>
-        <div class="p-4 bg-light m-5 rounded-4 mb-5">
-            <div class="mb-3 ms-3 me-3 form-floating">
-                <input type="text" class="form-control" placeholder="Username or Email">
-                <label for="" class="form-label fw-semibold">Username or Email</label>
-            </div>
-            <div class="mb-3 ms-3 me-3 form-floating">
-                <input type="password" class="form-control" placeholder="Password">
-                <label for="" class="form-label fw-semibold">Password</label>
-            </div>
-            <div class="d-flex justify-content-center">
-                <div class="ms-3 d-grid gap-3 me-3 mb-3" style="width: 50%;">
-                    <button class="btn btn-outline-dark" type="submit">Login</button>
+        <div class="form-container1 mx-md-5">
+            <div class="bg-light rounded-4 py-4 my-3 mx-md-5" id="login" data-aos="zoom-in-right" data-aos-duration="1000">
+                <div class="mb-3 ms-3 me-3 form-floating">
+                    <input type="text" class="form-control" placeholder="Username or Email">
+                    <label for="" class="form-label fw-semibold">Username or Email</label>
                 </div>
-            </div>
-            <div class="d-flex justify-content-between">
-                <div class="ms-3">
-                    <p class="text-secondary fw-bold">
-                        Doesn't have a account? <a href="" class="text-primary">Sign Up</a>
-                    </p>
+                <div class="mb-3 ms-3 me-3 form-floating">
+                    <input type="password" class="form-control" placeholder="Password">
+                    <label for="" class="form-label fw-semibold">Password</label>
                 </div>
-                <div class="me-3 form-check form-switch">
-                    <label for="" class="text-dark fw-bold form-check-label">Remember Me?</label>
-                    <input type="checkbox" class="form-check-input">
+                <div class="d-flex justify-content-center">
+                    <div class="ms-3 d-grid gap-3 me-3 mb-3" style="width: 25%;">
+                        <button class="btn btn-danger" type="submit">Login</button>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div class="ms-3">
+                        <p class="text-secondary fw-bold">
+                            Doesn't have a account? <br><a href="" class="text-primary">Sign Up</a>
+                        </p>
+                    </div>
+                    <div class="me-3 form-check form-switch">
+                        <label for="" class="text-dark fw-bold form-check-label">Remember Me?</label>
+                        <input type="checkbox" class="form-check-input">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="d-flex justify-content-between m-5 fw-semibold">
+        <div class="m-5 fw-semibold footer-container">
             <div class="footer-item">
-                <h2 class="text-light text-uppercase fw-bold">Pages</h2>
-                <div class="divider bg-light mb-4   "></div>
-                <div class="mb-2">
-                    <a href="#home" class="text-light fs-5" style="text-decoration: none;">Home</a>
-                </div>
-                <div class="mb-2">
-                    <a href="#services" class="text-light fs-5" style="text-decoration: none;">Services</a>
-                </div>
-                <div class="mb-2">
-                    <a href="#About-Us" class="text-light fs-5" style="text-decoration: none;">About Us</a>
-                </div>
-                <div class="mb-2">
-                    <a href="#contactus" class="text-light fs-5" style="text-decoration: none;">Contact Us</a>
-                </div>
+                <h2 class="text-light text-uppercase fw-bold">Quick Contacts</h2>
+                <div class="heading-line"></div>
+                <div class="text-light fs-5 mb-2"><span><i class="bi bi-geo-alt-fill"></i></span> No 255 (A) Lowerkyeemyine Road,<br> Ahlone, Yangon</div>
+                <div class="text-light fs-5 mb-2"><span><i class="bi bi-envelope-fill"></i></span> www.swampyae330@gmail.com</div>
+                <div class="text-light fs-5 mb-2"><span><i class="bi bi-telephone-fill"></i></span> +959     09958462067</div>
             </div>
             <div class="footer-item">
                 <h2 class="text-light text-uppercase fw-bold">Support</h2>
-                <div class="divider bg-light mb-4   "></div>
+                <div class="heading-line"></div>
                 <div class="mb-2">
-                    <a href="" class="text-light fs-5" style="text-decoration: none;">FAQ</a>
-                </div>
-                <div class="mb-2">
-                    <a href="" class="text-light fs-5" style="text-decoration: none;">Warranty & Returns</a>
+                    <a href="" class="text-light fs-5" style="text-decoration: none;">Warranty <br> & Returns</a>
                 </div>
                 <div class="mb-2">
                     <a href="" class="text-light fs-5" style="text-decoration: none;">Privacy</a>
@@ -207,41 +557,105 @@
                 </div>
             </div>
             <div class="footer-item">
-                <h2 class="text-light text-uppercase fw-bold">COMPANY</h2>
-                <div class="divider bg-light mb-4   "></div>
-                <div class="mb-2">
-                    <a href="" class="text-light fs-5" style="text-decoration: none;">About Us</a>
-                </div>
-                <div class="mb-2">
-                    <a href="" class="text-light fs-5" style="text-decoration: none;">Why Choose Us</a>
-                </div>
-                <div class="mb-2">
-                    <a href="" class="text-light fs-5" style="text-decoration: none;">Reviews</a>
-                </div>
-                <div class="mb-2">
-                    <a href="" class="text-light fs-5" style="text-decoration: none;">Careers</a>
-                </div>
-                <div class="mb-2">
-                    <a href="" class="text-light fs-5" style="text-decoration: none;">Contact Us</a>
+                <div class="footer-item">
+                    <h2 class="text-light text-uppercase fw-bold">Pages</h2>
+                    <div class="heading-line"></div>
+                    <div class="mb-2">
+                        <a href="#Home" class="text-light fs-5" style="text-decoration: none;">Home</a>
+                    </div>
+                    <div class="mb-2">
+                        <a href="#about" class="text-light fs-5" style="text-decoration: none;">About</a>
+                    </div>
+                    <div class="mb-2">
+                        <a href="#service" class="text-light fs-5" style="text-decoration: none;">Service</a>
+                    </div>
+                    <div class="mb-2">
+                        <a href="#plan" class="text-light fs-5" style="text-decoration: none;">Plan</a>
+                    </div>
+                    <div class="mb-2">
+                        <a href="#testimonial" class="text-light fs-5" style="text-decoration: none;">Testimonial</a>
+                    </div>
+                    <div class="mb-2">
+                        <a href="#news" class="text-light fs-5" style="text-decoration: none;">News</a>
+                    </div>
+                    <div class="mb-2">
+                        <a href="#faq" class="text-light fs-5" style="text-decoration: none;">FAQ</a>
+                    </div>
+                    <div class="mb-2">
+                        <a href="#contact" class="text-light fs-5" style="text-decoration: none;">Contact</a>
+                    </div>
                 </div>
             </div>
             <div class="footer-item">
                 <h2 class="text-light text-uppercase fw-bold">Follow Us</h2>
-                <div class="divider bg-light mb-4   "></div>
+                <div class="heading-line"></div>
                 <div class="d-flex flex-row">
                     <div class="me-2">
-                        <a href=""  style="text-decoration: none;">Icon</a>
+                        <a href="www.facebook.com"  style="text-decoration: none;" class=" btn btn-dark text-light fs-3"><span><i class="bi bi-facebook"></i></span></a>
                     </div>
                     <div class="me-2">
-                        <a href=""  style="text-decoration: none;">Icon</a>
+                        <a href="www.tiktok.com"  style="text-decoration: none;" class=" btn btn-dark text-light fs-3"><span><i class="bi bi-tiktok"></i></span></a>
                     </div>
                     <div class="me-2">
-                        <a href=""  style="text-decoration: none;">Icon</a>
+                        <a href="www.twitter.com"  style="text-decoration: none;" class="btn btn-dark text-light fs-3"><span><i class="bi bi-twitter-x"></i></span></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="text-center fw-semibold text-light mt-5 pt-5">© 2025 Strong Gym & Fitness| All Rights Reserved.</div>
+        <div class="text-center fw-semibold text-light mt-5 pt-5">&copy; 2025 Strong Gym & Fitness| All Rights Reserved.</div>
     </footer>
+
+
+    <a href="#Home" class="up-arrow"><i class="bi bi-arrow-90deg-up"></i></a>
+    <div class="offcanvas offcanvas-end border-0" id="mylogin" style="background: linear-gradient(to left,var(--first-color),var(--second-color));">
+        <div class="offcanvas-header">
+            <h4 class="fs-3 p-3 text-white">Sign Up</h4>
+            <button class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <a href="" style="text-decoration: none;" class="ms-3 me-3">
+                <div class="p-3 bg-primary text-white rounded-pill">
+                    Sign In With Facebook
+                </div>
+            </a>
+            <div class=" ms-3 me-3 mb-3 text-white fs-3 text-uppercase fw-medium">
+                OR Sign With Email
+            </div>
+            <div class="mb-3 ms-3 me-3 form-floating">
+                <input type="text" class="form-control" placeholder="Username">
+                <label for="" class="form-label fw-semibold">Username</label>
+            </div>
+            <div class="mb-3 ms-3 me-3 form-floating">
+                <input type="text" class="form-control" placeholder="Email">
+                <label for="" class="form-label fw-semibold">Email</label>
+            </div>
+            <div class="mb-3 ms-3 me-3 form-floating">
+                <input type="password" class="form-control" placeholder="Password">
+                <label for="" class="form-label fw-semibold">Password</label>
+            </div>
+            <div class="mb-3 ms-3 me-3 form-floating">
+                <input type="password" class="form-control" placeholder="Re-Enterpassword">
+                <label for="" class="form-label fw-semibold">Re-Enterpassword</label>
+            </div>
+            <div class="form-check form-check-inline mb-3 ms-3 me-3">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label text-white" for="inlineRadio1">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label text-white" for="inlineRadio2">Female</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                <label class="form-check-label text-white" for="inlineRadio3">Others</label>
+              </div>
+            <button class="btn btn-danger mb-3 ms-3 me-3 float-end fs-3 fw-medium" type="submit">Sign In</button>
+
+            <div class="mb-3 ms-3 me-3 text-white">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, sed? 
+                <input type="checkbox" class="form-check-input">
+            </div>
+        </div>
+    </div>
 </body>
 </html>

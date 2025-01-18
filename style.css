@@ -1,37 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=DynaPuff:wght@400..700&family=Modak&family=Monoton&family=Oswald:wght@200..700&family=Roboto+Flex:opsz,wght,GRAD@8..144,100..1000,89&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Oswald", serif;
 }
-/* header */
-header{
+body{
+    background: linear-gradient(to left,var(--first-color),var(--second-color));
+}
+:root{
+    --first-color: #0d6efd;
+    --second-color: #dc3545;
+    --third-color: #fff;
+    --fourth-color: #fd7e14;
+}
+/* navbar */
+nav{
+    background: linear-gradient(to left,var(--first-color),var(--second-color));
+    opacity: .9;
+}
+
+/* home page */
+#Home{
+    background-image: url(images/gym\ header.jpg);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+#Home{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to left,var(--first-color),var(--second-color));
+    mix-blend-mode: overlay;
+}
+
+
+
+
+
+
+/* custom utilities */
+.main-heading {
+    font-size: 3rem;
+    color: var(--third-color);
+    text-align: center;
+}
+
+.sub-heading {
+    font-size: 2rem;
+    color: var(--fourth-color);
+    text-align: center;
+}
+
+.heading-line{
+    width: 100px;
+    height: 2px;
+    background-color: var(--fourth-color);
+    margin: 30px auto;
+}
+
+/* service */
+.service-card img{
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.service-card img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.plan-2-card{
+    position: relative;
+}
+
+.recommended{
+    width: 200px;
+    background-color: var(--third-color);
+    color: #000;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 20px;
+    right: -50px;
+    transform: rotate(30deg);
+}
+
+/* testimonial */
+.carousel-control-prev-icon{
+    position: absolute;
+    left: -15%;
+}
+
+.carousel-control-next-icon{
+    position: absolute;
+    right: -15%;
+}
+
+.carousel-indicators button[type="button"]{
+    height: 13px;
+    width: 70px;
+}
+
+/* news */
+
+#news img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 100% 10%;
+    transition: .3s;
+}
+#news img:hover{
+    transform: scale(1.05);
+}
+
+/* faq */
+
+.accordion-button :not(.collapsed){
+    background-color: var(--fourth-color);
+    color: var(--third-color);
+}
+
+/* contact */
+
+.contact-background{
+    background-image: url(images/contact.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* up arrow */
+.up-arrow{
+    display: block;
+    width: 50px;
+    height: 80px;
+    background-color :var(--second-color);
+    text-align: center;
+    font-size: 2rem;
+    color: var(--third-color);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+    line-height: 80px;
+}
+
+/* footer */
+
+.footer-container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    z-index: 1111;
-}
-.flex1{
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
 }
-.flex-item{
-    display: flex;
-    gap: 40px;
-    align-items: center;
-}
-/* footer */
-.divider{
-    height: 2px;
-}
-@media (max-width:769px){
+
+@media (max-width:768px){
     .footer-item{
-        width: 75%;
-        margin: 25px auto;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .footer-item h2{
+        text-align: center;
     }
 }
-.background{
-    background-color: #FEFEFE;
-}
+
